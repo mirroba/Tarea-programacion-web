@@ -4,7 +4,7 @@ import { generateSixDigitCode } from './generateCode.utils.ts';
 describe('Pruebas unitarias para generateCode.utils.ts', () => {
   it('Debe generar un codigo de 6 digitos exactamente', () => {
     const code = generateSixDigitCode();
-    // Valida sring
+    // Valida string
     expect(code).toBeTypeOf('string');
     // Valida longitud
     expect(code.length).toBe(6);
